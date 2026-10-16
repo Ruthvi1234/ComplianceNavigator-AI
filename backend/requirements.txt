@@ -1,0 +1,24 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+email-validator==2.2.0
+motor==3.6.0
+pymongo==4.9.1
+python-jose[cryptography]==3.3.0
+bcrypt==4.2.0
+python-multipart==0.0.9
+requests==2.32.3
+beautifulsoup4==4.12.3
+rank-bm25==0.2.2
+python-dotenv==1.0.1
+httpx==0.27.2
+pytest==8.3.3
+pytest-asyncio==0.24.0
+
+# Everything above is actually imported by code that runs today (API,
+# auth, crawler, BM25 search, tests). Everything below is for features
+# that are designed but not yet built (see docs/ROADMAP.md Phase 2/3) -
+# install requirements-future.txt only once you're actually building
+# OCR or semantic search, since sentence-transformers alone pulls in a
+# 120MB+ PyTorch download for code that doesn't exist yet.

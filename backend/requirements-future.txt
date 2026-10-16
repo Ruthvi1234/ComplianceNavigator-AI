@@ -1,0 +1,13 @@
+# Install with: pip install -r requirements-future.txt
+# (after requirements.txt) once you're actually implementing:
+#
+# OCR pipeline (docs/ROADMAP.md Phase 2, services/ocr/ - not yet built):
+PyMuPDF==1.24.11
+pdfplumber==0.11.4
+pytesseract==0.3.13
+nltk==3.9.1
+
+# Semantic/embedding search (docs/ROADMAP.md Phase 3, upgrades
+# services/search/engine.py's TODO for hybrid ranking - not yet built):
+sentence-transformers==3.1.1
+faiss-cpu==1.9.0.post1
